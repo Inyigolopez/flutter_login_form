@@ -19,7 +19,7 @@ class UsuarioProvider {
     };
 
     final resp = await http.post(
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${_firebaseToken }',
+      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=$_firebaseToken',
       body: json.encode(authData)
     );
 
@@ -49,7 +49,7 @@ class UsuarioProvider {
     };
 
     final resp = await http.post(
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${_firebaseToken }',
+      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$_firebaseToken',
       body: json.encode(authData)
     );
 
